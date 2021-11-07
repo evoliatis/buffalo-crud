@@ -1,21 +1,11 @@
----
-title: "Utilisation de bufallo"
-author:
-  - Samuel COLLADO (scollado@evoliatis.com)
-date: 2021-11-07
-keywords:
-  - golang
-  - mvc
-...
-
-# Buffalo
+# Buffalo CRUB exemple
 
 ## Introduction
 
 Site du projet : https://gobuffalo.io/fr
 Documentation générale : https://gobuffalo.io/fr/docs/overview/
 Documentation de fizz (model) :  https://gobuffalo.io/en/docs/db/fizz
-Document de plush (vue) : ?
+Document de plush (vue) : https://gobuffalo.io/fr/docs/rendering/
 
 ## Création d'un projet
 
@@ -110,7 +100,7 @@ type User struct {
 }
 ~~~
 
-> **Attention** : Ajout de l'auto-incrément sur l'id en int
+> **Attention** : Ajout de l'auto-incrément sur l'id en int dans cet exemple, plutôt qu'un UUID
 
 ### Génération dans la base
 
@@ -160,7 +150,7 @@ Les actions du controlleur correspondants sont dans : `/actions/user.go`
 
 ### Les validateurs
 
-On les retrouve sous la formation de la méthode `Validate` du modèle
+On les retrouve sous la forme de la méthode `Validate` du modèle
 
 ~~~go
 func (u *User) Validate(tx *pop.Connection) (*validate.Errors, error) {
@@ -174,6 +164,7 @@ func (u *User) Validate(tx *pop.Connection) (*validate.Errors, error) {
 	), nil
 }
 ~~~
+
 A compléter
 
 ### Methode INDEX
