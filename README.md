@@ -123,7 +123,7 @@ type User struct {
 
 ### Génération
 
-Je reprends ici le même fonctionnement que pour laravel. 
+Je reprends ici le même fonctionnement que pour Laravel. 
 
 Exemple avec me modèle **user** :
 
