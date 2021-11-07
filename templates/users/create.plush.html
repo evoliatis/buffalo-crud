@@ -1,0 +1,18 @@
+<h1>User#Create</h1>
+
+<div class="card uper">
+    <div class="card-header">
+        <i class="fas fa-user"></i> Add a new User
+    </div>
+    <div class="card-body">
+        <!-- Contenu -->
+        <%= form_for( user, {method: "POST"}) { %>
+            <%= partial("users/form.html") %>
+            <hr />
+            <a href="<%= usersPath() %>" class="btn btn-dark btn-sm" data-confirm="Are you sure?">Cancel</a>
+            <button type="submit" class="btn btn-primary btn-sm">Add</button>
+        <% } %>
+        <!-- Fin du contenu -->
+    </div>
+</div>
+

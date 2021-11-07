@@ -1,0 +1,9 @@
+create_table("users") {
+	t.Column("id", "int", {primary: true, auto_increment: true})
+	t.Column("login", "string", {})
+	t.Column("password", "string", {})
+	t.Column("name", "string", {})
+	t.Column("email", "string", {})
+	t.Column("age", "integer", {})
+	t.Timestamps()
+}

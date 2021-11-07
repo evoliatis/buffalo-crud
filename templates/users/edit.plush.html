@@ -1,0 +1,19 @@
+<h1>User#Edit</h1>
+
+<div class="card uper">
+    <div class="card-header">
+        <i class="fas fa-user"></i> Edit an User
+    </div>
+    <div class="card-body">
+        <!-- Contenu -->
+        <%= form_for( user, {action: userPath({id: user.ID}), method: "PUT"}) { %>
+            <%= partial("users/form.html") %>
+            <hr />
+            <a href="<%= usersPath() %>" class="btn btn-dark btn-sm" data-confirm="Are you sure?">Cancel</a>
+            
+            <button type="submit" class="btn btn-primary btn-sm">Update</button>
+        <% } %>
+        <!-- Fin du contenu -->
+    </div>
+</div>
+

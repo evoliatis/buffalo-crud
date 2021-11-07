@@ -1,0 +1,21 @@
+<h1>User#Show</h1>
+
+<div class="card uper">
+    <div class="card-header">
+        <i class="fas fa-user"></i> Show an User
+    </div>
+    <div class="card-body">
+        <!-- Contenu -->
+        <div class="form-group">
+        <%= form_for( user, {action: userPath({id: user.ID}), method: "PUT"}) { %>
+            <%= f.InputTag("Login", {"readonly": true, "type":"text"}) %>
+            <%= f.InputTag("Name", {"readonly": true, "type":"text"}) %>
+            <%= f.InputTag("Email", {"readonly": true, "type":"email"}) %>
+            <%= f.InputTag("Age", {"readonly": true, "type":"number"}) %>
+        <% } %>
+        </div>
+        <hr />
+        <a href="<%= usersPath() %>" class="btn btn-dark btn-sm">Back</a>        
+        <!-- Fin du contenu -->
+    </div>
+</div>

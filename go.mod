@@ -13,7 +13,9 @@ require (
 	github.com/gobuffalo/packr/v2 v2.8.1
 	github.com/gobuffalo/pop/v5 v5.3.4
 	github.com/gobuffalo/suite v2.8.2+incompatible
+	github.com/gobuffalo/validate/v3 v3.1.0
 	github.com/markbates/grift v1.5.0
+	github.com/pkg/errors v0.9.1
 	github.com/unrolled/secure v1.0.9
 )
 
@@ -45,7 +47,6 @@ require (
 	github.com/gobuffalo/pop v4.13.1+incompatible // indirect
 	github.com/gobuffalo/tags/v3 v3.1.0 // indirect
 	github.com/gobuffalo/validate v2.0.4+incompatible // indirect
-	github.com/gobuffalo/validate/v3 v3.1.0 // indirect
 	github.com/gofrs/uuid v3.2.0+incompatible // indirect
 	github.com/gorilla/css v1.0.0 // indirect
 	github.com/gorilla/handlers v1.5.1 // indirect
@@ -79,7 +80,6 @@ require (
 	github.com/mitchellh/go-homedir v1.1.0 // indirect
 	github.com/monoculum/formam v0.0.0-20210523135142-1af3317b7b9b // indirect
 	github.com/pelletier/go-toml v1.9.3 // indirect
-	github.com/pkg/errors v0.9.1 // indirect
 	github.com/pmezard/go-difflib v1.0.0 // indirect
 	github.com/rogpeppe/go-internal v1.8.0 // indirect
 	github.com/sergi/go-diff v1.1.0 // indirect

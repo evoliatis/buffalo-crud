@@ -1,0 +1,33 @@
+<h1>User#Index</h1>
+
+<table class="table">
+<thead>
+  <tr>
+    <th scope="col">#</th>
+    <th scope="col">Login</th>
+    <th scope="col">Name</th>
+    <th scope="col">Email</th>
+    <th scope="col">Age</th>
+    <th scope="col"></th>
+  </tr>
+  </thead>
+  <tbody>
+  <%= for (user) in users { %>
+  <tr>
+    <th scope="row"><%= user.ID %></th>
+    <td><%= user.Login %></td>
+    <td><%= user.Name %></td>
+    <td><%= user.Email %></td>
+    <td><%= user.Age %></td>
+    <td>
+      <%= linkTo(user, {class: "btn btn-sm btn-warning"}) { %>Show<% } %>
+      <%= linkTo([user,"edit"], {class: "btn btn-sm btn-primary"}) { %>Edit<% } %>
+      <%= form_for( user, {action: userPath({id: user.ID}), method: "DELETE"}) { %>
+        <button type="submit" class="btn btn-danger btn-sm" data-confirm="Are you sure?">Delete</button>
+      <% } %>
+    </td>            
+  </tr>
+  <% } %>
+  </tbody>
+</table>
+<%= linkTo(["users","create"], {class: "btn btn-sm btn-success active"}) { %>Add User<% } %>
