@@ -1,4 +1,4 @@
-# Buffalo CRUB exemple
+# Buffalo CRUD exemple
 
 ## Introduction
 
