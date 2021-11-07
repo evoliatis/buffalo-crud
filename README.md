@@ -3,9 +3,10 @@
 ## Introduction
 
 Site du projet : https://gobuffalo.io/fr
-Documentation générale : https://gobuffalo.io/fr/docs/overview/
-Documentation de fizz (model) :  https://gobuffalo.io/en/docs/db/fizz
-Document de plush (vue) : https://gobuffalo.io/fr/docs/rendering/
+
+* Documentation générale : https://gobuffalo.io/fr/docs/overview/
+* Documentation de fizz (model) :  https://gobuffalo.io/en/docs/db/fizz
+* Document de plush (vue) : https://gobuffalo.io/fr/docs/rendering/
 
 ## Création d'un projet
 
